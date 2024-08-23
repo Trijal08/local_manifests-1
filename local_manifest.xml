@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Remotes -->
+    <remote name="GitHub" fetch="https://github.com" />
+    <remote name="Gitea" fetch="https://gitea.com" />
+    
+    <!-- Removals -->
+    <remove-project name="packages/apps/KProfiles" />
+    <remove-project name="hardware/xiaomi" />
+    <remove-project name="hardware/qcom-caf/sm8250/display" />
+
+    <!-- Repos -->
+    <!-- Device -->
+    <project path="device/xiaomi/munch" name="DeadlyShroud/device_xiaomi_munch" remote="GitHub" revision="crave-los" clone-depth="1" />
+    <project path="device/xiaomi/sm8250-common" name="DeadlyShroud/device_xiaomi_sm8250-common" remote="GitHub" revision="crave-los" clone-depth="1" />
+
+    <!-- Kernel -->
+    <project path="kernel/xiaomi/sm8250" name="PocoF3Releases/kernel_xiaomi_sm8250" remote="GitHub" revision="aosp-14" clone-depth="1" />
+
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/munch" name="deadlyshroud/vendor_xiaomi_munch" remote="Gitea" revision="crave" clone-depth="1" />
+    <project path="vendor/xiaomi/sm8250-common" name="deadlyshroud/vendor_xiaomi_sm8250-common" remote="Gitea" revision="crave" clone-depth="1" />
+
+    <!-- Add-ons -->
+    <project path="vendor/xiaomi/miuicamera" name="hdzungx/android_vendor_xiaomi_miuicamera" remote="Gitea" revision="uqpr3" clone-depth="1" />
+    <project path="packages/apps/ViPER4AndroidFX" name="TogoFire/packages_apps_ViPER4AndroidFX" remote="GitHub" revision="v4a" clone-depth="1" />
+    <project path="packages/apps/KProfiles" name="yaap/packages_apps_KProfiles" remote="GitHub" revision="fourteen" clone-depth="1" />
+    <project path="hardware/xiaomi" name="crdroidandroid/android_hardware_xiaomi" remote="GitHub" revision="14.0" clone-depth="1" />
+    <project path="hardware/qcom-caf/sm8250/display" name="AnkitSavani111/android_hardware_qcom_display" remote="GitHub" revision="lineage-21.0-caf-sm8250" clone-depth="1" />
+
+</manifest>
